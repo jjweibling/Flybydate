@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -42,5 +43,9 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+document.addEventListener("deviceready", onDeviceReady, false);
 
+function onDeviceReady() {
+    console.log(navigator.camera);
+}
 app.initialize();
