@@ -48,4 +48,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     console.log(navigator.camera);
 }
+function getPic(){
+	Camera.sourceType=Camera.PictureSourceType.CAMERA;
+	Camera.getPicture();
+}
+
 app.initialize();

@@ -26,4 +26,7 @@
     <plugin name="cordova-plugin-camera" spec="^4.0.1" />
     <engine name="browser" spec="^5.0.3" />
     <engine name="android" spec="git+https://github.com/apache/cordova-android.git#6.2.2" />
+    <plugin name="phonegap-plugin-push" spec="^2.1.2">
+        <variable name="FCM_VERSION" value="11.0.1" />
+    </plugin>
 </widget>
